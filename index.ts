@@ -27,7 +27,16 @@ function generateRandomFruit() {
   return fruits[Math.round(Math.random() * (fruits.length - 1))];
 }
 
-var fruitsSearch = [generateRandomFruit(), generateRandomFruit()];
+let fruitsSearch = [generateRandomFruit(), generateRandomFruit()];
+let panier = generateCart();
 
 console.log('Fruit recherché : ', fruitsSearch);
-console.log('Panier de fruit : ', generateCart());
+console.log('Panier de fruit : ', panier);
+
+/**
+ * Trouvé dans le panier un des fruits dans fruitsSearch
+ */
+
+/**
+ * Trouvé dans le panier tous les fruits contenu dans fruitsSearch
+ */
